@@ -3,8 +3,7 @@ import Card from './Card'
 
 const ExerciseList = ({exercises}) => (
   <div>
-  { exercises.map((exercise) => {
-    return(
+  { exercises.map((exercise) => (
       <Card
       key={exercise.id}
       title={exercise.title}
@@ -13,9 +12,9 @@ const ExerciseList = ({exercises}) => (
       leftColor={exercise.leftColor}
       rightColor={exercise.rightColor}
       />
-    )
+    
 
-  })}
+  ))}
   </div>
 )
 
