@@ -1,20 +1,13 @@
 import React from 'react'
 
-class ExerciseForm extends React.Component {
-
-
-
-  render(){
-    const { onChange, onSubmit,  form } = this.props
-
-    return (
-      <div className="container">
+const ExerciseForm = ({ onChange, onSubmit, form }) => (
+    <div className="container">
         <form
             onSubmit={onSubmit}
         >
             <div className="form-group">
                 <input
-                    type="texxt"
+                    type="text"
                     className="form-control"
                     placeholder="title"
                     name="title"
@@ -67,14 +60,12 @@ class ExerciseForm extends React.Component {
 
             <button
                 type="submit"
-                className="btn btn-primary"
+                className="btn btn-primary float-right"
             >
                 Submit
             </button>
         </form>
     </div>
-    )
-}
-}
+)
 
 export default ExerciseForm
